@@ -1,0 +1,311 @@
+<div class="section">
+  <div class="container">
+    <div class="heading-block mt-4 text-center">
+      <h3>Meet Our Team</h3>
+    </div>
+
+    <div class="container mt-6">
+      <div
+        id="oc-images"
+        class="owl-carousel image-carousel carousel-widget mb-6"
+        data-items-xs="2"
+        data-items-sm="3"
+        data-items-lg="3"
+        data-items-xl="3"
+        data-loop="true"
+        data-margin="20" 
+        data-nav="true" 
+        data-autoplay="3000"
+      >
+        <div class="oc-item">
+          <a href="#">
+            <div class="img-hover-wrap">
+              <div class="img-hover-card">
+                <img src="images/douri/team/yusra.jpg" alt="Yusra" />
+                <div class="img-hover-detail">
+                  <h2 class="img-hover-title mb-0"><a href="#">Yusra</a></h2>
+                  <small class="img-hover-category"><a href="#">President</a></small>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="oc-item">
+          <a href="#">
+            <div class="img-hover-wrap">
+              <div class="img-hover-card">
+                <img src="images/douri/team/fadi.jpg" alt="Fadi" />
+                <div class="img-hover-detail">
+                  <h2 class="img-hover-title mb-0"><a href="#">Fadi</a></h2>
+                  <small class="img-hover-category"
+                    ><a href="#">Member of Administration &amp; Psycho-Social Support</a></small
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="oc-item">
+          <a href="#">
+            <div class="img-hover-wrap">
+              <div class="img-hover-card">
+                <img src="images/douri/team/lina.jpg" alt="Lina" />
+                <div class="img-hover-detail">
+                  <h2 class="img-hover-title mb-0"><a href="#">Lina</a></h2>
+                  <small class="img-hover-category"><a href="#">Treasurer</a></small>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="oc-item">
+          <a href="#">
+            <div class="img-hover-wrap">
+              <div class="img-hover-card">
+                <img src="images/douri/team/samah.jpg" alt="samah" />
+                <div class="img-hover-detail">
+                  <h2 class="img-hover-title mb-0"><a href="#">Samah</a></h2>
+                  <small class="img-hover-category"
+                    ><a href="#">Member of The Board of Administration</a></small
+                  >
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="oc-item">
+          <a href="#">
+            <div class="img-hover-wrap">
+              <div class="img-hover-card">
+                <img src="images/douri/team/andy.jpg" alt="Andy" />
+                <div class="img-hover-detail">
+                  <h2 class="img-hover-title mb-0"><a href="#">Andy</a></h2>
+                  <small class="img-hover-category"><a href="#">Secretary</a></small>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="oc-item">
+          <a href="#">
+            <div class="img-hover-wrap">
+              <div class="img-hover-card">
+                <img src="images/douri/team/ola.jpg" alt="Ola" />
+                <div class="img-hover-detail">
+                  <h2 class="img-hover-title mb-0"><a href="#">Ola</a></h2>
+                  <small class="img-hover-category"><a href="#">Media Director</a></small>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .move-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+  }
+
+  /* img-hover-wraps */
+  .img-hover-wrap {
+    -webkit-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    -moz-transform-style: flat !important;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .img-hover-wrap:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 99;
+  }
+
+  .img-hover-card:after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    transition: all 0.3s ease;
+    opacity: 0;
+  }
+
+  .img-hover-wrap.show-title .img-hover-card:after {
+    opacity: 0.5;
+  }
+
+  .img-hover-wrap:hover .img-hover-card:after {
+    opacity: 1;
+  }
+
+  .img-hover-card {
+    position: relative;
+    display: block;
+    will-change: transform;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 40px transparent;
+  }
+
+  .img-hover-card img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+  }
+
+  .img-hover-card.hover-in {
+    transition: -webkit-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+    transition:
+      transform 0.2s ease-out,
+      -webkit-transform 0.2s ease-out;
+  }
+
+  .img-hover-card.hover-3d {
+    z-index: 99;
+  }
+
+  .img-hover-card.hover-out {
+    transition: -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+    transition:
+      transform 0.2s ease-in,
+      -webkit-transform 0.2s ease-in;
+  }
+
+  .img-hover-wrap:hover .img-hover-card {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  .img-hover-wrap.show-title .img-hover-title,
+  .img-hover-wrap.show-title .img-hover-category {
+    -webkit-transform: translateY(0) scale(1);
+    -ms-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  .img-hover-wrap.show-title:hover .img-hover-title,
+  .img-hover-wrap.show-title:hover .img-hover-category {
+    -webkit-transform: scale(1.106);
+    -ms-transform: scale(1.106);
+    transform: scale(1.106);
+  }
+
+  .img-hover-wrap:hover .img-hover-title,
+  .img-hover-wrap:hover .img-hover-category {
+    -webkit-transform: translateY(0) scale(1);
+    -ms-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  .img-hover-detail {
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    top: 40px;
+    bottom: 40px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    pointer-events: none;
+    -webkit-transform: translateZ(40px);
+    transform: translateZ(40px);
+    -webkit-backface-visibility: hidden;
+  }
+
+  .img-hover-title {
+    margin: 0 0 10px;
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    transition: 0.4s ease;
+    opacity: 0;
+    -webkit-transform: translateY(40px) scale(0);
+    -ms-transform: translateY(40px) scale(0);
+    transform: translateY(40px) scale(0);
+    will-change: transform;
+  }
+
+  .img-hover-category {
+    opacity: 0;
+    margin: 0 0 18px;
+    font-family: "Lato";
+    transition: 0.4s ease;
+    transition-delay: 0.1s;
+    -webkit-transform: translateY(40px) scale(0);
+    -ms-transform: translateY(40px) scale(0);
+    transform: translateY(40px) scale(0);
+    will-change: transform;
+  }
+
+  .img-hover-detail a {
+    color: #fff;
+  }
+</style>
+
+<script is:inline>
+  jQuery(document).ready(function () {
+    if (!jQuery("body").hasClass("device-touch")) {
+      var lFollowX = 0,
+        lFollowY = 0,
+        x = 0,
+        y = 0,
+        friction = 1 / 30;
+
+      function moveBackground() {
+        x += (lFollowX - x) * friction;
+        y += (lFollowY - y) * friction;
+
+        translate = "translate(" + x + "px, " + y + "px) scale(1.1)";
+
+        jQuery(".move-bg").css({
+          "-webit-transform": translate,
+          "-moz-transform": translate,
+          transform: translate,
+        });
+
+        window.requestAnimationFrame(moveBackground);
+      }
+
+      jQuery(".move-bg")
+        .parents(".section")
+        .on("mousemove click", function (e) {
+          var lMouseX = Math.max(-100, Math.min(100, jQuery(window).width() / 2 - e.clientX));
+          var lMouseY = Math.max(-100, Math.min(100, jQuery(window).height() / 2 - e.clientY));
+          lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+          lFollowY = (20 * lMouseY) / 100;
+        });
+
+      moveBackground();
+    }
+
+    jQuery(".img-hover-wrap").hover3d({
+      selector: ".img-hover-card",
+      shine: false,
+    });
+  });
+</script>

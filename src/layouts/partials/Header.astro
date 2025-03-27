@@ -1,0 +1,57 @@
+---
+// data imports
+import navData from "@/data/navData";
+---
+
+<header
+  id="header"
+  class="full-header transparent-header transparent-header-responsive"
+  data-sticky-class="not-dark"
+>
+  <div id="header-wrap">
+    <div class="container">
+      <div class="header-row">
+        <!-- Logo -->
+        <div id="logo">
+          <a href="index.html">
+            <img
+              class="logo-default"
+              srcset="images/douri/logo.png, images/douri/logo.png"
+              src="images/douri/logo.png"
+              alt="Douri Logo"
+            />
+            <img
+              class="logo-dark"
+              srcset="images/douri/logo.png, images/douri/logo.png"
+              src="images/douri/logo.png"
+              alt="Douri Logo"
+            />
+          </a>
+        </div><!-- #logo end -->
+
+        <div class="primary-menu-trigger">
+          <button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+            <span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+          </button>
+        </div>
+
+        <!-- Primary Navigation
+						============================================= -->
+        <nav class="primary-menu">
+          <ul class="menu-container">
+            {
+              navData.map((item) => (
+                <li class="menu-item">
+                  <a class="menu-link" href={item.path}>
+                    <div>{item.name}</div>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav><!-- #primary-menu end -->
+      </div>
+    </div>
+  </div>
+  <div class="header-wrap-clone"></div>
+</header><!-- #header end -->

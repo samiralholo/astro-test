@@ -1,0 +1,282 @@
+---
+const res = await fetch(`${Astro.url}api/sliders.json`);
+const data = await res.json();
+---
+
+<section id="slider" class="slider-element revslider-wrap h-auto include-header">
+  <div class="rev_slider_wrapper" style="background:#aaa;padding:0px;">
+    <!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
+    <div id="rev_slider_31_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
+      <ul>
+        <!-- SLIDE  -->
+        {
+          data.map((slide, index) => (
+            <li
+              class="dark"
+              data-index={'rs-'+index}
+              data-transition="fade"
+              data-slotamount="default"
+              data-hideafterloop="0"
+              data-hideslideonmobile="off"
+              data-easein="Power4.easeOut"
+              data-easeout="Power4.easeOut"
+              data-masterspeed="1000"
+              data-thumb={slide.image}
+              data-rotate="0"
+              data-saveperformance="off"
+              data-title="Slide"
+              data-slicey_shadow="0px 0px 50px 0px #373344"
+            >
+              <img
+                src={slide.image}
+                alt="Image"
+                data-bgposition="center center"
+                data-kenburns="on"
+                data-duration="7000"
+                data-ease="Linear.easeNone"
+                data-scalestart="100"
+                data-scaleend="130"
+                data-rotatestart="0"
+                data-rotateend="0"
+                data-blurstart="0"
+                data-blurend="0"
+                data-offsetstart="0 0"
+                data-offsetend="0 0"
+                class="rev-slidebg"
+                data-no-retina
+              />
+
+              <div
+                class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme"
+                id="slide-104-layer-6"
+                data-x="['left','left','left','left']"
+                data-hoffset="['762','-10','-133','-139']"
+                data-y="['top','top','top','top']"
+                data-voffset="['553','194','190','256']"
+                data-width="['388','413','413','279']"
+                data-height="['196','437','437','336']"
+                data-whitespace="nowrap"
+                data-type="shape"
+                data-slicey_offset="10"
+                data-slicey_blurstart="inherit"
+                data-slicey_blurend="inherit"
+                data-responsive_offset="on"
+                data-frames='[{"delay":200,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="z-index: 5;background-color:rgba(0, 0, 0, 0.5);"
+              >
+                {" "}
+              </div>
+
+              <div
+                class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme"
+                id="slide-104-layer-7"
+                data-x="['left','left','left','left']"
+                data-hoffset="['607','122','40','-95']"
+                data-y="['top','top','top','top']"
+                data-voffset="['17','27','78','54']"
+                data-width="['445','809','809','573']"
+                data-height="['434','256','256','233']"
+                data-whitespace="nowrap"
+                data-type="shape"
+                data-slicey_offset="20"
+                data-slicey_blurstart="inherit"
+                data-slicey_blurend="inherit"
+                data-responsive_offset="on"
+                data-frames='[{"delay":250,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="z-index: 6;background-color:rgba(0, 0, 0, 0.5);"
+              >
+                {" "}
+              </div>
+
+              <div
+                class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme"
+                id="slide-104-layer-1"
+                data-x="['left','left','left','left']"
+                data-hoffset="['318','486','395','240']"
+                data-y="['top','top','top','top']"
+                data-voffset="['358','334','377','348']"
+                data-width="['320','252','252','159']"
+                data-height="['436','309','309','291']"
+                data-whitespace="nowrap"
+                data-type="shape"
+                data-slicey_offset="30"
+                data-slicey_blurstart="inherit"
+                data-slicey_blurend="inherit"
+                data-responsive_offset="on"
+                data-frames='[{"delay":300,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="z-index: 7;background-color:rgba(0, 0, 0, 0.5);"
+              >
+                {" "}
+              </div>
+
+              <div
+                class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme"
+                id="slide-104-layer-5"
+                data-x="['left','left','left','left']"
+                data-hoffset="['85','588','481','312']"
+                data-y="['top','top','top','top']"
+                data-voffset="['283','207','252','251']"
+                data-width="['291','403','403','273']"
+                data-height="['179','178','178','157']"
+                data-whitespace="nowrap"
+                data-type="shape"
+                data-slicey_offset="50"
+                data-slicey_blurstart="inherit"
+                data-slicey_blurend="inherit"
+                data-responsive_offset="on"
+                data-frames='[{"delay":350,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="z-index: 8;background-color:rgba(0, 0, 0, 0.5);"
+              >
+                {" "}
+              </div>
+
+              <div
+                class="tp-caption tp-shape tp-shapewrapper tp-slicey  tp-resizeme"
+                id="slide-104-layer-9"
+                data-x="['left','left','left','left']"
+                data-hoffset="['378','588','481','312']"
+                data-y="['top','top','top','top']"
+                data-voffset="['20','207','252','251']"
+                data-width="['165','403','403','273']"
+                data-height="['235','178','178','157']"
+                data-whitespace="nowrap"
+                data-type="shape"
+                data-slicey_offset="70"
+                data-slicey_blurstart="inherit"
+                data-slicey_blurend="inherit"
+                data-responsive_offset="on"
+                data-frames='[{"delay":400,"speed":1000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="z-index: 9;background-color:rgba(0, 0, 0, 0.5);"
+              >
+                {" "}
+              </div>
+
+              <div
+                class="tp-caption   tp-resizeme"
+                id="slide-104-layer-3"
+                data-x="['center','center','center','center']"
+                data-hoffset="['0','0','0','0']"
+                data-y="['middle','middle','middle','middle']"
+                data-voffset="['0','0','0','0']"
+                data-fontsize="['50','50','40','30']"
+                data-lineheight="['60','60','50','40']"
+                data-width="['none','none','480','360']"
+                data-height="none"
+                data-whitespace="['nowrap','nowrap','normal','normal']"
+                data-type="text"
+                data-responsive_offset="on"
+                data-frames='[{"delay":400,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 100);bc:rgb(255,255,255);bw:0 0 3px 0;"}]'
+                data-textAlign="['inherit','inherit','center','center']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="z-index: 11; white-space: nowrap; font-size: 50px; line-height: 60px; font-weight: 600; color: rgba(255,255,255,100);font-family:Poppins;border-color:rgba(255, 255, 255, 0);border-style:solid;border-width:0px 0px 3px 0px;cursor:pointer;"
+              >
+                {slide.title}
+              </div>
+
+              <div
+                class="tp-caption   tp-resizeme"
+                id="slide-104-layer-4"
+                data-x="['center','center','center','center']"
+                data-hoffset="['0','0','0','0']"
+                data-y="['middle','middle','middle','middle']"
+                data-voffset="['59','59','49','39']"
+                data-width="none"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-type="text"
+                data-responsive_offset="on"
+                data-frames='[{"delay":600,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="z-index: 12; white-space: nowrap; font-size: 17px; line-height: 25px; font-weight: 400; color: rgba(255,255,255,100);font-family:Poppins;"
+              >
+                {slide.description}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+      <div class="tp-bannertimer" style="height: 10px; background: rgba(255,255,255,0.25);"></div>
+    </div>
+    <!-- END REVOLUTION SLIDER -->
+  </div>
+
+  <style>
+    #rev_slider_31_1 .uranus.tparrows {
+      width: 50px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0);
+    }
+    #rev_slider_31_1 .uranus.tparrows:before {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 40px;
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+    }
+    #rev_slider_31_1 .uranus.tparrows:hover:before {
+      opacity: 0.75;
+    }
+    .hermes .tp-bullet {
+      overflow: hidden;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      background-color: rgba(0, 0, 0, 0);
+      box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+      -webkit-transition: background 0.3s ease;
+      transition: background 0.3s ease;
+      position: absolute;
+    }
+    .hermes .tp-bullet:hover {
+      background-color: rgba(0, 0, 0, 0.21);
+    }
+    .hermes .tp-bullet:after {
+      content: " ";
+      position: absolute;
+      bottom: 0;
+      height: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 1px rgb(255, 255, 255);
+      -webkit-transition: height 0.3s ease;
+      transition: height 0.3s ease;
+    }
+    .hermes .tp-bullet.selected:after {
+      height: 100%;
+    }
+  </style>
+</section>

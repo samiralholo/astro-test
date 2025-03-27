@@ -1,0 +1,173 @@
+---
+import Footer from "@/layouts/partials/Footer.astro";
+import Header from "@/layouts/partials/Header.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=PT+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Core Style -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="/css/font-icons.css" />
+
+    <!-- Plugins/Components CSS -->
+    <link rel="stylesheet" href="/css/swiper.css" />
+
+    <link rel="stylesheet" href="/include/rs-plugin/css/settings.css" media="screen" />
+    <link rel="stylesheet" href="/include/rs-plugin/css/layers.css" />
+    <link rel="stylesheet" href="/include/rs-plugin/css/navigation.css" />
+
+    <title>Astro Basics</title>
+  </head>
+  <body class="stretched">
+    <div id="wrapper">
+      <Header />
+      <slot />
+      <Footer />
+
+      <div id="gotoTop" class="uil uil-angle-up"></div>
+    </div>
+
+    <!-- Javascripts
+	============================================= -->
+    <script is:inline src="/js/plugins.min.js"></script>
+    <script is:inline src="/js/functions.bundle.js"></script>
+
+    <!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+    <script is:inline src="/include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script is:inline src="/include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script is:inline src="/include/rs-plugin/js/addons/revolution.addon.slicey.min.js"></script>
+
+    <script is:inline src="/include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+    <script is:inline src="/include/rs-plugin/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script is:inline src="/include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script is:inline src="/include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"
+    ></script>
+    <script is:inline src="/include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+    <script is:inline src="/include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script is:inline src="/include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script is:inline src="/include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script is:inline src="/include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+
+    <!-- ADD-ONS JS FILES -->
+
+<script is:inline>
+  var tpj=jQuery;
+  var revapi31;
+
+  tpj(document).ready(function() {
+    if(tpj("#rev_slider_31_1").revolution == undefined){
+      revslider_showDoubleJqueryError("#rev_slider_31_1");
+    }else{
+      revapi31 = tpj("#rev_slider_31_1").show().revolution({
+        sliderType:"standard",
+        jsFileLocation:"include/rs-plugin/js/",
+        sliderLayout:"fullscreen",
+        dottedOverlay:"none",
+        delay:5500,
+        navigation: {
+          keyboardNavigation:"off",
+          keyboard_direction: "horizontal",
+          mouseScrollNavigation:"off",
+                      mouseScrollReverse:"default",
+          onHoverStop:"off",
+          arrows: {
+            style:"uranus",
+            enable:true,
+            hide_onmobile:false,
+            hide_onleave:false,
+            tmp:'',
+            left: {
+              h_align:"left",
+              v_align:"center",
+              h_offset:20,
+                              v_offset:0
+            },
+            right: {
+              h_align:"right",
+              v_align:"center",
+              h_offset:20,
+                              v_offset:0
+            }
+          }
+          ,
+          bullets: {
+            enable:true,
+            hide_onmobile:false,
+            style:"hermes",
+            hide_onleave:false,
+            direction:"horizontal",
+            h_align:"center",
+            v_align:"bottom",
+            h_offset:0,
+            v_offset:20,
+                          space:5,
+            tmp:''
+          }
+        },
+        responsiveLevels:[1240,1024,778,480],
+        visibilityLevels:[1240,1024,778,480],
+        gridwidth:[1240,1024,778,480],
+        gridheight:[868,768,960,720],
+        lazyType:"none",
+        shadow:0,
+        spinner:"off",
+        stopLoop:"off",
+        stopAfterLoops:-1,
+        stopAtSlide:-1,
+        shuffle:"off",
+        autoHeight:"off",
+        fullScreenAutoWidth:"off",
+        fullScreenAlignForce:"off",
+        fullScreenOffsetContainer: "",
+        fullScreenOffset: "0px",
+        hideThumbsOnMobile:"off",
+        hideSliderAtLimit:0,
+        hideCaptionAtLimit:0,
+        hideAllCaptionAtLilmit:0,
+        debugMode:false,
+        fallbacks: {
+          simplifyAll:"off",
+          nextSlideOnWindowFocus:"off",
+          disableFocusListener:false,
+        }
+      });
+    }
+
+          if(revapi31) revapi31.revSliderSlicey();
+
+          revapi31.on("revolution.slide.onloaded",function (e) {
+      setTimeout( function(){ SEMICOLON.Base.sliderDimensions(); }, 200 );
+    });
+
+    revapi31.on("revolution.slide.onchange",function (e,data) {
+      SEMICOLON.Base.sliderMenuClass();
+    });
+  });	/*ready*/
+</script>
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
